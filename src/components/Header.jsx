@@ -16,30 +16,32 @@ export default function Header() {
       
       <div className="header-color">
       <div className="left-icons">
-      <img src={Telefon} alt="Logotyp" className="logo" />
-      <span>+46 8 123 122 44</span>
+      <img src={Telefon} alt="Telefonnummer" className="logo" />
+      <a href="tel:+46812312244" className="phone">+46 8 123 122 44</a>
 
       <div className="contact-info">
-      <img src={Brev} alt="Logotyp" className="logo" />
-      <span>contact@domain.com</span>
+      <img src={Brev} alt="Email" className="logo" />
+      <a href="mailto:contact@domain.com" className="email"> contact@domain.com</a>
       </div>
       </div>
 
       <div className="right-icons">
-      <a href="https://www.facebook.com" target="_blank"><img src={Facebook} alt="Facebook" className="logo" />
+      <a href="https://www.facebook.com"> <img src={Facebook} alt="Facebook" className="icon" />
       </a>
-      <a href="https://www.twitter.com" target="_blank"><img src={Twitter} alt="Twitter" className="logo" />
+      <a href="https://www.twitter.com"> <img src={Twitter} alt="Twitter" className="icon" />
       </a>
-      <a href="https://www.instagram.com" target="_blank"><img src={Instagram} alt="Instagram" className="logo" />
+      <a href="https://www.instagram.com"> <img src={Instagram} alt="Instagram" className="icon" />
       </a>
-      <a href="https://www.youtube.com" target="_blank"><img src={Youtube} alt="Youtube" className="logo" />
+      <a href="https://www.youtube.com"> <img src={Youtube} alt="Youtube" className="icon" />
       </a>
       </div>
       </div>
 
       <div className="middle-section">
       <div className="bottom-icon">
+      <a href="/Home">
       <img src={Logostoragecompany} alt="Logotyp" className="logo" />
+     </a>
       </div>
 
     <nav className="navbar">

@@ -47,6 +47,10 @@ align-items: center;
   text-decoration: none;
   font-weight: 800;
 }
+.phone, .email {
+  text-decoration: none;
+  color: var(--white-color);
+}
 /*HEADER END*/ 
 
 /*BUTTON*/ 
