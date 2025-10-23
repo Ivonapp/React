@@ -109,3 +109,27 @@ border: none;
   width: 600px;
 }
 /*HERO END*/ 
+
+/*FOOTER*/
+.footer-background-color {
+background-color: var(--green-primary-color);
+}
+.footer-wrapper {
+  display: flex;
+  justify-content: space-between;
+  color: var(--white-color);
+  padding: 20px;
+}
+.footer-icon {
+  display: flex;
+  align-items: center;
+}
+.footer-wrapper {
+  padding: 1rem;
+  align-items: center;
+}
+.small-icon {
+    padding: 1rem;
+  justify-content: center;
+}
+/*FOOTER END*/
