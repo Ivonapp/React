@@ -1,10 +1,10 @@
 import React from 'react'
-import Hero from '../components/Hero';
+import HeroLarge from '../components/HeroLarge';
 
 const Home = () => {
   return (
        <div>
-      <Hero />
+      <HeroLarge />
     </div>
   )
 }
