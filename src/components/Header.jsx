@@ -53,7 +53,7 @@ export default function Header() {
     </div>
     </nav>
 
-    <Button />
+    <Button name ="Book Now" />
         
     </div>
 

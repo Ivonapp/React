@@ -60,7 +60,7 @@ color: var(--green-primary-color);
 border-radius: 5px;
 width: 130px;
 height: 45px;
-font-weight: 800;
+font-weight: 700;
 border: none;
 }
 .button:hover {
@@ -68,3 +68,35 @@ border: none;
 }
 /*BUTTON END*/ 
 
+/*HERO*/ 
+.hero-background {
+  background-color: var(--green-hero-color);
+}
+.h4-headline {
+  color: var(--orange-primary-color);
+}
+.h1-headline {
+  color: var(--light-green-headline-color);
+}
+.hero-ingress {
+  font-size: 1rem;
+  color: var(--white-color);
+  padding-bottom: 15px;
+  max-width: 90%;
+}
+.text-container {
+  padding-left: 200px;
+  display: flex;
+  flex-direction: column;
+  text-align: left;
+  gap: 10px;
+}
+.hero-wrapper {
+  justify-content: center;
+  align-items: start;
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  padding-top: 100px;
+  text-align: center;
+}
+/*HERO END*/ 
