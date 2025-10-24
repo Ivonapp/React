@@ -201,3 +201,51 @@ font-size: 1rem;
   object-fit: contain;
 }
 /*BOX2 END*/
+
+/*BOX1*/
+.box-container {
+  display: flex;
+  justify-content: center;
+  margin-top: 50px;
+  margin-bottom: 100px;
+}
+.box-container2 {
+  display: flex;
+  justify-content: center;
+  width: 100%;
+}
+.box-1 {
+  margin: 2rem;
+}
+.box-2 {
+  max-width: 700px;
+}
+.box-positioning {
+  position: relative;
+}
+.green-icon {
+  position: absolute;
+  bottom: -50px;
+  left: 25px;
+}
+.numbers {
+  color: var(--orange-primary-color);
+  margin: 1rem;
+  display: flex;
+  margin-bottom: 0px;
+    justify-content: center;
+}
+.numbers-text {
+  font-size: 1rem;
+  color: var(--white-color);
+  display: flex;
+  justify-content: center;
+}
+.number-text-container {
+  position: absolute;
+  bottom: 20px;
+  right: 50px;
+  display: flex;
+  padding: 1rem;
+}
+/*BOX1 END*/

@@ -8,7 +8,7 @@ function Box2() {
     <div>
         
     <div className="positioning-wrapper">
-
+      
     <div className="positionering2">
     <div className="positionering-text"> 
     <h4 className="yellow-title">About Us</h4>
@@ -16,7 +16,6 @@ function Box2() {
     <div className="green-ingress">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Quisque molestie nisl sed dui lacinia gravida. Nulla quis nulla leo. Mauris ac blandit nisi, non sodales augue. Phasellus eget elit gravida.</div>
     </div>
   
-
     <div className="vm-wrapper"> 
     <div className="vm-box">
     <h5 className="vm-title">Vision</h5>
