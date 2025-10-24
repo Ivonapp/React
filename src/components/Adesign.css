@@ -288,4 +288,30 @@ max-width: 350px;
 .yellow-border:hover {
    border: 2px solid var(--orange-primary-color);
 }
+/*YELLOWBORDER END*/
+
+/*CHOOSE-US-COLUMNS*/
+.choose-us-column {
+  display: flex;
+  align-items: center;
+}
+.choose-us-text-section {
+  margin-left: 1.5rem;
+  width: 500px;
+}
+.choose-us-title {
+  margin-bottom: 0.5rem;
+}
+.choose-us-ingress {
+  margin-bottom: 0.5rem;
+}
+/*CHOOSE-US-COLUMNS END*/
+
+
+
+/*WHYCHOOSEUS*/
+.booking-background-color {
+  background-color: var(--logoipsum-color);
+}
+/*WHYCHOOSEUS END*/
 

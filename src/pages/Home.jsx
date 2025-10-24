@@ -4,7 +4,7 @@ import Footer from '../components/Footer';
 import Box1 from '../components/Box1'
 import Logoipsum from '../components/Logoipsum'
 import Servicescolumns from '../components/Servicescolumns';
-import Yellowborder from '../components/Yellowborder';
+import Chooseus from '../components/Chooseus';
 
 
 
@@ -15,7 +15,7 @@ const Home = () => {
       <Box1 />
       <Logoipsum />
       <Servicescolumns />
-
+      <Chooseus />
 
       <Footer />
     </div>
