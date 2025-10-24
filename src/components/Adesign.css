@@ -56,12 +56,12 @@ align-items: center;
 /*BUTTON*/ 
 .button {
 background-color: var(--orange-primary-color);
-color: var(--green-primary-color);
 border-radius: 5px;
 width: 130px;
 height: 45px;
 font-weight: 700;
 border: none;
+color: var(--green-primary-color);
 }
 .button:hover {
   background-color: var(--orange-primary-hover-color);
@@ -133,3 +133,71 @@ background-color: var(--green-primary-color);
   justify-content: center;
 }
 /*FOOTER END*/
+
+/*BOX2*/
+.positioning-wrapper {
+display: flex;
+width: 100%;
+gap: 10px;
+}
+.positionering-text {
+  padding: 1.5rem;
+}
+.yellow-title {
+color: var(--orange-primary-color);
+ margin-bottom: 1rem;
+}
+.green-title {
+   margin-bottom: 1rem;
+}
+.vm-wrapper {
+  display: flex;
+  padding: 0.5rem;
+}
+.vm-box {
+border: 2px solid #ECECEC;
+border-radius: 10px;
+padding: 1rem;
+margin: 0.5rem;
+width: 300px;
+}
+.vm-box:hover {
+  border: 2px solid var(--orange-primary-color);
+}
+.vm-title {
+  margin-bottom: 1rem;
+}
+.vm-ingress {
+font-size: 1rem;
+}
+.button-icon-wrapper {
+  display: flex;
+  align-items: center;
+  padding: 1rem;
+  
+}
+.phone-icon-text-wrapper {
+  display: flex;
+  gap: 1.5rem;
+  margin-left: 11.5rem;
+}
+.phone-icon-number {
+  text-decoration: none;
+  color: var(--green-primary-color);
+  font-weight: 800;
+}
+.phoneicon-circle {
+  background-color: var(--green-primary-color);
+  border-radius: 50%;
+  width: 40px;
+  height: 40px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.phoneicon {
+  width: 50%;
+  height: 50%;
+  object-fit: contain;
+}
+/*BOX2 END*/
