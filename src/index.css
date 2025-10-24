@@ -11,6 +11,10 @@
      --light-green-headline-color: #F1FFEA;
      /*SUBSCRIBE*/
      --primary-subscribe-color: #FAF8EC;
+     /*BOX2*/
+     --gray-border-color: #ECECEC;
+     /*LOGOIPSUM*/
+     --logoipsum-color: #faf8ec;
 }
 
 body {

@@ -155,7 +155,7 @@ color: var(--orange-primary-color);
   padding: 0.5rem;
 }
 .vm-box {
-border: 2px solid #ECECEC;
+border: 2px solid var(--gray-border-color);
 border-radius: 10px;
 padding: 1rem;
 margin: 0.5rem;
@@ -249,3 +249,14 @@ font-size: 1rem;
   padding: 1rem;
 }
 /*BOX1 END*/
+
+/*LOGOIPSUM*/
+.logoipsum-background {
+  display: flex; 
+  justify-content: center;
+  gap: 3.5rem;
+  padding-bottom: 50px;
+  padding-top: 50px;
+  background-color: var(--logoipsum-color);
+}
+/*LOGOIPSUM END*/
