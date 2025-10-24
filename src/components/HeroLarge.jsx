@@ -9,7 +9,9 @@
         return (
         
         <div>
+
         <div className="hero-background">
+        <div className="container">
         <div className="hero-wrapper">
         <div className="text-container">
         <h1 className="h1-headline">Space Simplified,</h1>
@@ -23,6 +25,7 @@
         </div>
         </div>
         </div>
+      </div>
       </div>
 
       )

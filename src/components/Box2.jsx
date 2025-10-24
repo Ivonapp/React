@@ -2,11 +2,14 @@ import React from 'react'
 import "./Adesign.css";
 import Phoneicon from '../assets/images/Phoneicon.svg';
 import Button from './Button';
+import Yellowborder from './Yellowborder';
 
 function Box2() {
   return (
     <div>
         
+
+    <div className="container">
     <div className="positioning-wrapper">
       
     <div className="positionering2">
@@ -16,17 +19,21 @@ function Box2() {
     <div className="green-ingress">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Quisque molestie nisl sed dui lacinia gravida. Nulla quis nulla leo. Mauris ac blandit nisi, non sodales augue. Phasellus eget elit gravida.</div>
     </div>
   
-    <div className="vm-wrapper"> 
-    <div className="vm-box">
-    <h5 className="vm-title">Vision</h5>
-    <div className="vm-ingress">Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusan tium doloremque laudantium.</div>
+
+<div className="vm-wrapper"> 
+    
+<Yellowborder 
+  title="Vision" 
+  ingress="Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusan tium doloremque laudantium."  
+/>
+
+<Yellowborder 
+  title="Mission" 
+  ingress="Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusan tium doloremque laudantium."  
+/>
+
     </div>
 
-    <div className="vm-box">
-    <h5 className="vm-title">Mission</h5>
-    <div className="vm-ingress">Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusan tium doloremque laudantium.</div>
-    </div>
-    </div>
 
     <div className="button-icon-wrapper"> 
     <Button name="Discover More" />
@@ -40,11 +47,10 @@ function Box2() {
     <h5 className="phone-icon-text">More Information</h5>
     <a href="tel:+46812312244" className="phone-icon-number">+46 8 123 122 44</a>
     </div>
-    </div>
-    </div>
-    </div>
-
-
+      </div>
+        </div>
+          </div>
+      </div>
     </div>
   </div>
   )

@@ -13,7 +13,7 @@ import Logostoragecompany from '../assets/images/Logostoragecompany.svg';
 export default function Header() {
   return (
     <header>
-      
+
       <div className="header-color">
       <div className="left-icons">
       <img src={Telefon} alt="Telefonnummer" className="logo" />

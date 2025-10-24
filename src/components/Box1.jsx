@@ -7,7 +7,7 @@ function Box1() {
   return (
     <div>
         
-
+<div className="container">
 <div className="box-container">
 <div className="box-container2">
 
@@ -50,10 +50,9 @@ function Box1() {
 
     <Box2 />
     </div>
-    </div>
-
-    </div>
-
+        </div>
+            </div>
+        </div>
     </div>
   )
 }

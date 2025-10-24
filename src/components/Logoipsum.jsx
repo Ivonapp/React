@@ -8,8 +8,11 @@ import Logoipsum5 from '../assets/images/Logoipsum5.svg';
 function Logoipsum() {
   return (
     <div>
-        
+
+       
     <div className="logoipsum-background">
+      <div className="container">
+        <div className="logoipsum-flex">
     <div className="Logoipsum1">
     <img src={Logoipsum1} alt="logo" className="Logoipsum-icon" />
     </div>
@@ -25,11 +28,9 @@ function Logoipsum() {
     <div className="Logoipsum5">
     <img src={Logoipsum5} alt="logo" className="Logoipsum-icon" />
     </div>
-
     </div>
-    
-
-
+    </div>
+  </div>
     </div>
   )
 }

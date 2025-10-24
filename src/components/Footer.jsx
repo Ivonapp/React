@@ -7,6 +7,7 @@ function Footer() {
 
     <footer>
     <div className ="footer-background-color">
+      <div className="container"> 
     <div className="footer-wrapper">
     <div className="footer-holder"> 
     <p>&copy; 2025 StorAid, All rights reserved.</p>
@@ -20,8 +21,10 @@ function Footer() {
     </div>
     </div>
     </div>
+    </div>
     </footer>
     </div>
+    
   )
 }
 
