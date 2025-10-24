@@ -239,7 +239,9 @@ color: var(--orange-primary-color);
 /*LOGOIPSUM END*/
 
 /*SERVICESCOLUMN*/
-
+.services-container {
+  margin-bottom: 3rem;
+}
 .services-title-yellow {
 color: var(--orange-primary-color);
 padding: 1rem;
@@ -254,7 +256,6 @@ margin-top: 3rem;
 .services-title-green {
   width: 600px;
 }
-
 .green-ingress-container {
 display: flex;
 align-items: center;
