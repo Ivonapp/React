@@ -472,3 +472,35 @@ padding: 1rem;
 padding-top: 1rem;
 }
 /*GREENTEXT END*/
+
+
+/*PAGENOTFOUND*/
+.page-not-found-wrapper {
+  display: flex;
+  flex-direction: column;
+  text-align: center;
+  justify-content: center;
+  height: 700px;
+  margin-bottom: 1rem;
+}
+.page-not-found-background {
+  background-color: var(--green-primary-color);
+  
+}
+.page-not-found-title {
+  color: var(--orange-primary-color);
+  padding-bottom: 1rem;
+}
+.page-not-found-ingress {
+  color: var(--white-color);
+  padding-bottom: 1rem;
+}
+.page-not-found-ops {
+  color: var(--white-color);
+  padding-bottom: 1rem;
+  padding-top: 1rem;
+}
+.page-not-found-button {
+  padding: 1rem;
+}
+/*PAGENOTFOUND END*/
