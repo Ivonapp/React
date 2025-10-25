@@ -8,7 +8,6 @@ import Chooseus from '../components/Chooseus';
 import Pricingplan from '../components/Pricingplan';
 import Greentext from '../components/Greentext';
 
-
 const Home = () => {
   return (
        <div>
@@ -23,6 +22,10 @@ const Home = () => {
       greeningresse ="Lorem ipsum dolor sit amet, consectetur adipiscing elit. Quisque molestie nisl sed dui lacinia gravida. Nulla quis nulla leo. Mauris ac blandit nisi non sodales augue. Phasellus eget elit gravida."
       />
       
+
+
+
+
       <Footer />
     </div>
   )
