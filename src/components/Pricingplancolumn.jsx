@@ -1,18 +1,18 @@
 import React from 'react'
 import Buttonlight from './Buttonlight';
 
-function Pricingplancolumn() {
+function Pricingplancolumn({ pricetext, amounttext }) {
   return (
     <div>
         <div className="container">
 <div className="border-pricing-container">
 
 <div className="width-container"> 
-<h5 className="small-unit">Small Unit</h5>
+<h5 className="pricetext">{pricetext}</h5>
 
 <div className="dollar-container">
 <h4 className="dollar-sign">$</h4>
-<h3 className="amount">100</h3>
+<h3 className="amounttext">{amounttext}</h3>
 <h6 className="month">/month</h6>
 </div>
 

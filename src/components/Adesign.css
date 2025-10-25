@@ -374,7 +374,7 @@ margin-left: 1rem;
   font-weight: 800;
 padding-top: 1rem; 
 }
-.small-unit {
+.pricetext {
   padding-top: 2rem;
   display: flex;
   justify-content: center;
@@ -386,7 +386,7 @@ padding-top: 1rem;
   padding-right: 0.5rem;
   color: var(--orange-primary-color);
 }
-.amount {
+.amounttext {
   color: var(--orange-primary-color);
   font-weight: 800;
 }
@@ -435,7 +435,7 @@ color: var(--green-primary-color);
   color: var(--orange-primary-color);
 }
 .border-pricing-container:hover .pricing-ingress,
-.border-pricing-container:hover .small-unit,
+.border-pricing-container:hover .pricetext,
 .border-pricing-container:hover .month,
 .border-pricing-container:hover .pricing-ingress-text {
   color: var(--white-color);
