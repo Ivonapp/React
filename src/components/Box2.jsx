@@ -3,6 +3,8 @@ import "./Adesign.css";
 import Phoneicon from '../assets/images/Phoneicon.svg';
 import Buttondark from './Buttondark';
 import Yellowborder from './Yellowborder';
+import Iconlayout from './Iconlayout';
+
 
 function Box2() {
   return (
@@ -31,25 +33,19 @@ function Box2() {
   title="Mission" 
   ingress="Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusan tium doloremque laudantium."  
 />
-
     </div>
-
 
     <div className="button-icon-wrapper"> 
     <Buttondark text="Discover More" />
     
-
-    <div className="phone-icon-text-wrapper">
-    <div className="phoneicon-circle">
-    <img src={Phoneicon} alt="Telefonnummer" className="phoneicon" />
-    </div>
-    <div className="phone-icon-wrapper"> 
-    <h5 className="phone-icon-text">More Information</h5>
-    <a href="tel:+46812312244" className="phone-icon-number">+46 8 123 122 44</a>
-    </div>
-      </div>
-        </div>
+    <Iconlayout 
+    icon = {Phoneicon}
+    title = "More Information"
+    text = "+46 8 123 122 44"
+    />
+    
           </div>
+        </div>
       </div>
     </div>
   </div>

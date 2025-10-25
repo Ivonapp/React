@@ -21,7 +21,6 @@ const Home = () => {
       greentitle ="Looking for Secure and Flexible Storage? Find Your Perfect Fit With Us."
       greeningresse ="Lorem ipsum dolor sit amet, consectetur adipiscing elit. Quisque molestie nisl sed dui lacinia gravida. Nulla quis nulla leo. Mauris ac blandit nisi non sodales augue. Phasellus eget elit gravida."
       />
-      
 
 
 
