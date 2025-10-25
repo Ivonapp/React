@@ -348,15 +348,75 @@ margin-left: 1rem;
 }
 /*WHYCHOOSEUS END*/
 
-/*PRICINGPLAN*/
-.pricing-border {
-  width: 320px;
+
+/*PRICINGPLANCOLUMN*/
+.border-pricing-container {
+  width: 300px;
   height: 500px;
   border: 3px solid #ECECEC;
   background-color: #F1FFEA;
   border-radius: 10px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
 }
-.pricing-border:hover {
+.width-container {
+  width: 250px;
+}
+.dollar-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.month {
+  padding-left: 1rem;
+  font-weight: 800;
+padding-top: 1rem; 
+}
+.small-unit {
+  padding-top: 2rem;
+  display: flex;
+  justify-content: center;
+  color: var(--green-primary-color)
+}
+.dollar-sign {
+  display: flex;
+  padding-bottom: 4rem;
+  padding-right: 0.5rem;
+  color: var(--orange-primary-color);
+}
+.amount {
+  color: var(--orange-primary-color);
+  font-weight: 800;
+}
+.pricing-icons {
+  display: flex;
+  justify-content: left;
+  align-items: left;
+  gap: 0.5rem;
+}
+.buttons-container {
+  padding-top: 1rem;
+  display: flex;
+  justify-content: center;
+}
+.icon-columns-container {
+  padding-top: 1.5rem;
+  gap: 0.5rem;
+  display: flex;
+  flex-direction: column;
+}
+.pricing-ingress-text {
+  padding: 0.2rem;
+  text-align: center;
+  padding-bottom: 2rem;
+}
+.pricing-ingress {
+  padding: 0.2rem;
+  text-align: center;
+}
+.border-pricing-container:hover {
   background-color: var(--green-primary-color);
 }
 .pricing-icons {
@@ -368,15 +428,16 @@ margin-left: 1rem;
 .pricing-ingress {
   color: var(--green-primary-color);
 }
-.pricing-border:hover .bi-check-circle-fill {
+.border-pricing-container {
+color: var(--green-primary-color);
+}
+.border-pricing-container:hover .bi-check-circle-fill {
   color: var(--orange-primary-color);
 }
-.pricing-border:hover .pricing-ingress {
+.border-pricing-container:hover .pricing-ingress,
+.border-pricing-container:hover .small-unit,
+.border-pricing-container:hover .month,
+.border-pricing-container:hover .pricing-ingress-text {
   color: var(--white-color);
 }
-
-
-
-
-
-/*PRICINGPLAN END*/
+/*PRICINGPLANCOLUMN END*/

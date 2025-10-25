@@ -34,7 +34,7 @@ body {
   padding: 0 20px;
 }
 h1 {
- font-size: 4rem;
+ font-size: 4.1rem;
 }
 h2 {
   font-size: 4rem;
@@ -46,5 +46,9 @@ h4 {
  font-size: 1.5rem;
 }
 h5 {
+font-size: 1.2rem;
+}
+h6 {
 font-size: 1.1rem;
+
 }

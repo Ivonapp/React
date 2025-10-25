@@ -5,15 +5,23 @@ function Pricingplancolumn() {
   return (
     <div>
         <div className="container">
+<div className="border-pricing-container">
 
+<div className="width-container"> 
+<h5 className="small-unit">Small Unit</h5>
 
+<div className="dollar-container">
+<h4 className="dollar-sign">$</h4>
+<h3 className="amount">100</h3>
+<h6 className="month">/month</h6>
+</div>
 
-        <div className="pricing-border">
+<div className="pricing-ingress-text">Phasellus sollicitudin sapien eu massa accumsan, quis semper odio suscipit.</div>
 
+<hr />
+</div>
 
-    <div className="pricing-ingress">Phasellus sollicitudin sapien eu massa accumsan, quis semper odio suscipit.</div>
-        <hr />
-            <div className="pricing-container"> 
+ <div className="icon-columns-container">
                 <div className="pricing-icons">
                     <i className="bi bi-check-circle-fill"></i>
                     <p className="pricing-ingress">Nam nec ipsum in dolor</p>
@@ -37,23 +45,20 @@ function Pricingplancolumn() {
                 <div className="pricing-icons">
                     <i className="bi bi-check-circle-fill"></i>
                     <p className="pricing-ingress">Etiam eget libero non ligula</p>
-                
+                </div>
 
-                    <div className="btn-wrapper"> 
+
+
+
+                     <div className="buttons-container"> 
                     <Buttonlight text="Rent Now" />
+                    </div>
                 </div>
             </div>
         </div>
     </div>
-            
-            
 
 
-
-
-
-        </div>
-    </div>
   )
 }
 
