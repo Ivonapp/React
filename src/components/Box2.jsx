@@ -1,7 +1,7 @@
 import React from 'react'
 import "./Adesign.css";
 import Phoneicon from '../assets/images/Phoneicon.svg';
-import Button from './Button';
+import Buttondark from './Buttondark';
 import Yellowborder from './Yellowborder';
 
 function Box2() {
@@ -36,7 +36,7 @@ function Box2() {
 
 
     <div className="button-icon-wrapper"> 
-    <Button name="Discover More" />
+    <Buttondark text="Discover More" />
     
 
     <div className="phone-icon-text-wrapper">

@@ -3,7 +3,8 @@
 :root {
     --green-primary-color: #12372A;
     --orange-primary-color: #F1C30C;
-    --orange-primary-hover-color: #b99607;
+    --dark-hover-color: #12372A;
+    --light-hover-color: #ffffff;
     --white-color: #ffffff;
     --black-color: #000000;
     /*HERO*/

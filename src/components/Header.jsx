@@ -1,7 +1,7 @@
 import React from 'react';
 import "./Adesign.css";
 import { NavLink } from 'react-router-dom';
-import Button from './Button';
+import Buttondark from './Buttondark';
 import Facebook from '../assets/images/Facebook.svg';
 import Twitter from '../assets/images/Twitter.svg';
 import Brev from '../assets/images/Brev.svg';
@@ -53,7 +53,7 @@ export default function Header() {
     </div>
     </nav>
 
-    <Button name ="Book Now" />
+    <Buttondark text ="Book Now" />
         
     </div>
 

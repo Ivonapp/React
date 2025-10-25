@@ -14,8 +14,7 @@ function ChooseusColumn({ icon, title, ingress }) {
                     <p className="choose-us-ingress">{ingress}</p>
                 </div>
             </div>
-
-    </div>
+      </div>
   )
 }
 
