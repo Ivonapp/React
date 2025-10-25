@@ -4,7 +4,7 @@ import Icon2 from '../assets/images/Icon2.svg';
 import Icon3 from '../assets/images/Icon3.svg';
 import Icon4 from '../assets/images/Icon4.svg';
 import ChooseusColumn from './ChooseusColumn';
-import graybox2 from '../assets/images/graybox2.svg';
+import Chooseusbox from '../assets/images/Chooseusbox.svg';
 import Titlelayout from './Titlelayout';
 
 function Chooseus() {
@@ -20,41 +20,44 @@ ingress="Lorem ipsum dolor sit amet, consectetur adipiscing elit. Quisque molest
 />
 
 <div className="chooseus-container">
-                <div className="chooseus-icon-container">
+
+<div className="chooseus-icon-container">
+<div className="chooseus-wrapper">
                 <ChooseusColumn 
                 icon={Icon1}
                 title="Security and Safety"
                 ingress="Lorem ipsum dolor sit amet, consectetur adipiscing elit. Ut elit tellus, luctus nec ullamcorper mattis, pulvinar dapibus leo."
                 />
-
+</div>
+<div className="chooseus-wrapper">
                 <ChooseusColumn 
                 icon={Icon2}
                 title="Flexible and Affordable"
                 ingress="Lorem ipsum dolor sit amet, consectetur adipiscing elit. Ut elit tellus, luctus nec ullamcorper mattis, pulvinar dapibus leo."
                 />
-
+</div>
+<div className="chooseus-wrapper">
                 <ChooseusColumn 
                 icon={Icon3}
                 title="Clean and Well-Maintained Facilities"
                 ingress="Lorem ipsum dolor sit amet, consectetur adipiscing elit. Ut elit tellus, luctus nec ullamcorper mattis, pulvinar dapibus leo."
                 />
-
+</div>
+<div className="chooseus-wrapper">
                 <ChooseusColumn 
                 icon={Icon4}
                 title="24/7 and Convenient Access"
                 ingress="Lorem ipsum dolor sit amet, consectetur adipiscing elit. Ut elit tellus, luctus nec ullamcorper mattis, pulvinar dapibus leo."
                 />
             </div>
+        </div>
 
 
-
-                <div className="chooseus-wrapper">
-                <img src={graybox2} alt="logo" className="graybox2" />
+                <div className="chooseus-box">
+                <img src={Chooseusbox} alt="logo" className="Chooseusbox" />
 
                     </div>
                 </div>
-
-
             </div>
         </div>
     </div>
