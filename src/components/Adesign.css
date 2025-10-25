@@ -444,10 +444,31 @@ color: var(--green-primary-color);
 }
 /*PRICINGPLANCOLUMN END*/
 
-
 /*PRICINGPLAN*/
-
 .pricingplan-container {
   display: flex;
   justify-content: space-between;
 }
+/*PRICINGPLAN END*/
+
+
+
+/*GREENTEXT*/
+.green-color-container {
+  background-color: var(--green-primary-color);    
+}
+.green-container { 
+display: flex;
+flex-direction: column;
+text-align: center;
+padding: 4rem;
+margin-bottom: 1rem;
+}
+.greentitle, .greeningresse {
+color: var(--white-color);
+padding: 1rem;
+}
+.greenbutton {
+padding-top: 1rem;
+}
+/*GREENTEXT END*/

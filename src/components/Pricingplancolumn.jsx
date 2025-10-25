@@ -4,9 +4,9 @@ import Buttonlight from './Buttonlight';
 function Pricingplancolumn({ pricetext, amounttext }) {
   return (
     <div>
-        <div className="container">
+        
 <div className="border-pricing-container">
-
+<div className="container">
 <div className="width-container"> 
 <h5 className="pricetext">{pricetext}</h5>
 
