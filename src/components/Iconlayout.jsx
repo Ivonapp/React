@@ -6,7 +6,7 @@ function Iconlayout({ icon, title, text }) {
     <div>
         
 
-        <div className="phone-icon-text-wrapper">
+        <div className="phone-icon-text-wrapper2">
             <div className="phoneicon-circle">
             <img src={icon} alt="icon" className="phoneicon" />
             </div>

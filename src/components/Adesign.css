@@ -221,6 +221,10 @@ color: var(--orange-primary-color);
   gap: 1.5rem;
   margin-left: 11.5rem;
 }
+.phone-icon-text-wrapper2 {
+  display: flex;
+  gap: 1.5rem;
+}
 .phone-icon-number {
   text-decoration: none;
   color: var(--green-primary-color);
@@ -229,16 +233,11 @@ color: var(--orange-primary-color);
 .phoneicon-circle {
   background-color: var(--green-primary-color);
   border-radius: 50%;
-  width: 40px;
-  height: 40px;
+  width: 50px;
+  height: 50px;
   display: flex;
   align-items: center;
   justify-content: center;
-}
-.phoneicon {
-  width: 50%;
-  height: 50%;
-  object-fit: contain;
 }
 /*BOX2 END*/
 
@@ -485,7 +484,6 @@ padding-top: 1rem;
 }
 .page-not-found-background {
   background-color: var(--green-primary-color);
-  
 }
 .page-not-found-title {
   color: var(--orange-primary-color);
@@ -504,3 +502,57 @@ padding-top: 1rem;
   padding: 1rem;
 }
 /*PAGENOTFOUND END*/
+
+/*SOCIALMEDIAPAGE*/
+.socialmedia-backgroundcolor {
+ background-color: var(--green-hero-color);
+}
+.logogubbe {
+display: flex;
+padding-top: 5rem;
+}
+.socialmedia-container {
+  display: flex;
+}
+.socialmedia-border-column {
+  background-color: #9EB3A3;
+  padding-left: 2rem;
+  padding-right: 2rem;
+}
+.socialmedia-border {
+    display: flex;
+    flex-direction: column;
+}
+.socialmedia-iconlayout {
+  padding-top: 1.5rem;
+}
+.socialmedia-ingress-column {
+  padding-top: 1.5rem;
+  padding-bottom: 1.5rem;
+}
+.socialmedia-ingress {
+  padding-top: 1.5rem;
+  width: 470px;
+}
+.icon-layout {
+    display: flex;
+}
+.phoneicon {
+  width: 30px; 
+  height: 30px;
+  color: var(--orange-primary-color);
+}
+.socialmedia-text-column {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding-top: 2.5rem;
+}
+.socialmedia-oursocialmedia {
+  font-weight: 800;
+}
+.socialmedia-line {
+  height: 2px;
+  width: 20%;
+  background-color: black;
+}

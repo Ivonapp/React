@@ -38,12 +38,15 @@ function Box2() {
     <div className="button-icon-wrapper"> 
     <Buttondark text="Discover More" />
     
+
+
+    <div className="phone-icon-text-wrapper">
     <Iconlayout 
     icon = {Phoneicon}
     title = "More Information"
     text = "+46 8 123 122 44"
     />
-    
+    </div>
           </div>
         </div>
       </div>
