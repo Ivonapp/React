@@ -5,6 +5,8 @@ import Box1 from '../components/Box1'
 import Logoipsum from '../components/Logoipsum'
 import Servicescolumns from '../components/Servicescolumns';
 import Chooseus from '../components/Chooseus';
+import Pricingplancolumn from '../components/Pricingplancolumn';
+
 
 
 
@@ -16,7 +18,8 @@ const Home = () => {
       <Logoipsum />
       <Servicescolumns />
       <Chooseus />
-
+      <Pricingplancolumn />
+      
       <Footer />
     </div>
   )

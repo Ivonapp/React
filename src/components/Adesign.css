@@ -347,3 +347,36 @@ margin-left: 1rem;
   padding-left: 11rem;
 }
 /*WHYCHOOSEUS END*/
+
+/*PRICINGPLAN*/
+.pricing-border {
+  width: 320px;
+  height: 500px;
+  border: 3px solid #ECECEC;
+  background-color: #F1FFEA;
+  border-radius: 10px;
+}
+.pricing-border:hover {
+  background-color: var(--green-primary-color);
+}
+.pricing-icons {
+  display: flex;
+}
+.bi-check-circle-fill {
+  color: var(--green-primary-color);
+}
+.pricing-ingress {
+  color: var(--green-primary-color);
+}
+.pricing-border:hover .bi-check-circle-fill {
+  color: var(--orange-primary-color);
+}
+.pricing-border:hover .pricing-ingress {
+  color: var(--white-color);
+}
+
+
+
+
+
+/*PRICINGPLAN END*/
