@@ -1,6 +1,7 @@
 import React from 'react'
 import Yellowborder from './Yellowborder';
 import graybox2 from '../assets/images/graybox2.svg';
+import Titlelayout from './Titlelayout';
 
 
 function Servicescolumns() {
@@ -8,15 +9,12 @@ function Servicescolumns() {
     <div>
         
     <div className="container">
-    <div className="services-container">
 
-    <h4 className="services-title-yellow">Our Services</h4>
-
-    <div className="green-ingress-container"> 
-        <h3 className="services-title-green">Specialized Storage for Every Special Item</h3>
-        <div className="services-ingress-green">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Quisque molestie nisl sed dui lacinia gravida. Nulla quis nulla leo. Mauris ac blandit nisi non sodales augue. Phasellus eget elit gravida.</div>
-    </div>
-
+    <Titlelayout
+    title="Our Services"
+    middletitle="Specialized Storage for Every Special Item"
+    ingress="Lorem ipsum dolor sit amet, consectetur adipiscing elit. Quisque molestie nisl sed dui lacinia gravida. Nulla quis nulla leo. Mauris ac blandit nisi non sodales augue. Phasellus eget elit gravida."
+    />
 
     <div className="columns-container">
         <div className="column-container">
@@ -43,10 +41,6 @@ function Servicescolumns() {
                     title="Top-Notch Security" 
                     ingress="Lorem ipsum dolor sit amet, consectetur adipiscing elit. Ut elit tellus, luctus nec ullamcorper mattis, pulvinar dapibus leo."  
                 />
-            </div>
-
-
-
 
                 </div>
             </div>

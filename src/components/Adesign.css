@@ -239,23 +239,6 @@ color: var(--orange-primary-color);
 /*LOGOIPSUM END*/
 
 /*SERVICESCOLUMN*/
-.services-container {
-  margin-bottom: 3rem;
-}
-.services-title-yellow {
-color: var(--orange-primary-color);
-padding: 1rem;
-margin-left: 2rem;
-margin-top: 3rem;
-}
-.services-ingress-green {
-  padding: 1rem;
-  margin-left: 2rem;
-  width: 650px;
-}
-.services-title-green {
-  width: 600px;
-}
 .green-ingress-container {
 display: flex;
 align-items: center;
@@ -307,11 +290,33 @@ max-width: 350px;
 }
 /*CHOOSE-US-COLUMNS END*/
 
-
-
 /*WHYCHOOSEUS*/
-.booking-background-color {
+.chooseus-background-color {
   background-color: var(--logoipsum-color);
+}
+.chooseus-title-container {
+  margin-bottom: 3rem;
+}
+.chooseus-yellow-title {
+color: var(--orange-primary-color);
+padding: 1rem;
+margin-left: 2rem;
+margin-top: 3rem;
+}
+.chooseus-title-container {
+display: flex;
+align-items: center;
+justify-content: space-between;
+padding: 1rem;
+margin-left: 2rem;
+}
+.chooseus-green-title {
+  width: 600px;
+}
+.chooseus-ingress {
+  padding: 1rem;
+  margin-left: 2rem;
+  width: 650px;
 }
 /*WHYCHOOSEUS END*/
 
