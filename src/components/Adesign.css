@@ -556,3 +556,44 @@ padding-top: 5rem;
   width: 20%;
   background-color: black;
 }
+
+
+/*BLOGCOLUMN*/
+
+
+.column-green-1, .column-green-2 {
+  display: flex;
+  justify-content: center;
+  align-items: start;
+  background-color: var(--green-primary-color);
+  width: 450px;
+  height: 300px;
+  padding-top: 2.2rem;
+}
+.column-gray-border {
+  background-color: #c4c4c4;
+  width: 380px;
+  height: 280px;
+}
+.column-green-2 {
+  display: flex;
+  justify-content: start;
+  flex-direction: column;
+  padding-left: 2.2rem;
+  padding-right: 2.2rem;
+  margin-bottom: 1rem;
+}
+.column-ingress, .kalender-text, .column-title, .column-datum {
+  color: var(--white-color);
+  padding-top: 2rem;
+}
+.column-yellow-ingress {
+  color: var(--orange-primary-color);
+  padding-top: 2rem;
+}
+.kalender-text {
+  padding-left: 0.5rem;
+}
+.column-title {
+  font-weight: 800;
+}
