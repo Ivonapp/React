@@ -8,6 +8,7 @@ import Chooseus from '../components/Chooseus';
 import Pricingplan from '../components/Pricingplan';
 import Greentext from '../components/Greentext';
 import Blogs from '../components/Blogs';
+import Subscribe from '../components/Subscribe';
 
 const Home = () => {
   return (
@@ -23,7 +24,7 @@ const Home = () => {
       greeningresse ="Lorem ipsum dolor sit amet, consectetur adipiscing elit. Quisque molestie nisl sed dui lacinia gravida. Nulla quis nulla leo. Mauris ac blandit nisi non sodales augue. Phasellus eget elit gravida."
       />
     <Blogs />
-
+    <Subscribe />
       <Footer />
     </div>
   )

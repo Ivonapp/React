@@ -1,30 +1,46 @@
-import React from 'react'
+import React, {useState, useEffect} from 'react'
 import Kalendericon from '../assets/images/Kalendericon.svg';
 
 
-function Blogcolumn() {
+const Blogcolumn = () => {
+    const [serviceItems, setServiceItems] = useState([])
+
+
+    const fetchData = async () => {
+        const res = await fetch('https://win25-jsf-assignment.azurewebsites.net/api/blogs')
+        const data = await res.json()
+        setServiceItems(data)
+    }
+    useEffect(() => {
+    fetchData()
+    }, [])
+
   return (
-    <div>
+
         
 <div className="column-container">
+                            {serviceItems.map(item => (
+                            <div key={item.id} className="column-wrapper">
     <div className="column-green-1">
-    <div className="column-gray-border"></div>
+    <div className="column-img">
+        <img src={item.imageUrl} />
     </div>
+    </div>
+
+
     <div className="column-green-2">
+    <div className="column-icon-datum"> 
+    <a href="" className="kalender-icon"><img src= {Kalendericon} alt="Icon kalender"/></a>
+                             
 
-
-
-
-<div className="column-icon-datum"> 
-<a href="" className="kalender-icon"><img src= {Kalendericon} alt="Icon kalender"/></a>
-                             <span className="kalender-text">August 17, 2025</span></div>
-                        <h6 className="column-title">Safe and Secure: The Importance of Choosing the Right Storage</h6>
-                    <div className="column-ingress">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aenean a sem magna. Etiam ac odio sit amet lorem…</div>
+                             <span className="kalender-text">{item.created}</span></div>
+                        <h6 className="column-title">{item.title}</h6>
+                    <div className="column-ingress">{item.description}</div>
                 <div className="column-yellow-ingress">Read more →</div>
             </div>
         </div>
+      ))}
     </div>
   )
 }
-
 export default Blogcolumn
