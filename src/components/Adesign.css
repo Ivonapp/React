@@ -147,10 +147,6 @@ background-color: var(--green-primary-color);
   justify-content: center;
 }
 
-
-
-
-
 /*SUBSCRIBE*/
 .subscribe-title {
 font-size: 2.5rem;
@@ -212,48 +208,7 @@ color: var(--green-primary-color);
   border: none; 
   border: 2px solid var(--orange-primary-color);
 }
-/*ERROR*/
-.input-wrapper {
-    position: relative; /*HÄR*/
-}
-.input::placeholder {
-  color: var(--placeholder-color); 
-}
-.input + label {
-  color: var(--label-color);
-}
-.input.invalid + .error {
-  border-color: red;
-  color: red;
-}
-.error {
-  position: absolute;
-  top: 40px;
-  left: 35px;
-  background-color: red; 
-  color: white;
-  font-size: 10px;
-  padding: 6px 10px;
-  border-radius: 4px;
-  margin-top: 4px;
-  opacity: 1;
-  white-space: nowrap;
-  transition: opacity 0.2s ease-in-out, visibility 0.2s ease-in-out;
-}
-  .error::before {
-    content: '';
-    position: absolute;
-    bottom: 100%;
-    left: 10px;
-    border-width: 6px;
-    border-style: solid;
-  }
-/*ERROR END*/
 /*SUBSCRIBE END*/
-
-
-
-
 
 
 /*FOOTER END*/
@@ -560,8 +515,6 @@ color: var(--green-primary-color);
 }
 /*PRICINGPLAN END*/
 
-
-
 /*GREENTEXT*/
 .green-color-container {
   background-color: var(--green-primary-color);    
@@ -581,7 +534,6 @@ padding: 1rem;
 padding-top: 1rem;
 }
 /*GREENTEXT END*/
-
 
 /*PAGENOTFOUND*/
 .page-not-found-wrapper {
@@ -668,6 +620,10 @@ padding-top: 5rem;
 }
 
 /*BLOGCOLUMN*/
+.column-container {
+  display: flex;
+  gap: 1rem;
+}
 .column-green-2, .column-green-1 {
   display: flex;
   justify-content: center;
@@ -677,6 +633,7 @@ padding-top: 5rem;
 }
 .column-green-1 {
   padding-top: 1.3rem;
+  border-radius: 5px 5px 0 0;
 }
 .column-green-2 {
   flex-direction: column;
@@ -685,15 +642,22 @@ padding-top: 5rem;
   padding-bottom: 2rem;
   padding-top: 1rem;
   margin-bottom: 1rem;
+  border-radius: 0 0 5px 5px;
 }
 .column-img {
 display: flex;
 justify-content: center;
 }
+.column-img img {
+  border-radius: 5px;
+}
 .column-ingress, .kalender-text, .column-title, .column-datum {
   color: var(--white-color);
   padding-top: 1rem;
 }
+.kalender-text {
+font-size: 14px;
+} 
 .column-yellow-ingress {
   color: var(--orange-primary-color);
   padding-top: 1.5rem;
