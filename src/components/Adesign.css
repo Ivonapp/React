@@ -375,6 +375,7 @@ margin-left: 2rem;
   display: flex;
   align-items: center;
   justify-content: space-around;
+  
 }
 /*SERVICESCOLUMN END*/
 
@@ -564,7 +565,7 @@ color: var(--green-primary-color);
 
 /*GREENTEXT*/
 .green-color-container {
-  background-color: var(--green-primary-color);    
+  background-color: var(--green-hero-color);    
 }
 .green-container { 
 display: flex;
@@ -684,7 +685,7 @@ padding-top: 5rem;
   display: flex;
   justify-content: center;
   align-items: start;
-  background-color: var(--green-primary-color);
+  background-color: var(--green-hero-color);
   width: 470px;
 }
 .column-green-1 {
@@ -722,9 +723,7 @@ justify-content: center;
 
 
 /*TESTIMONIALS*/
-.fannie {
-  border: 2px solid red;
-}
+
 .testimonials {
   background-color: var(--green-hero-color);
   display: flex;
@@ -801,3 +800,30 @@ justify-content: center;
   gap: 0;
 }
 /*TESTIMONIALS END*/
+
+/*ACCORDION*/
+.questions {
+  font-weight: 800;
+  border-radius: 5px;
+  background-color:#ECECEC;
+  display: flex;
+  justify-content: space-between;
+  cursor: pointer;
+  padding: 0.5rem;
+}
+.questions:hover {
+  background-color: var(--orange-primary-color)
+}
+.answer {
+  border-radius: 5px;
+  max-height: 0;
+  overflow: hidden;
+  transition: max-height 0.3s ease;
+}
+.answer.open {
+  max-height: 500px;
+}
+.btn-round {
+  border: 0;
+}
+/*ACCORDION END*/

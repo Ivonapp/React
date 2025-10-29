@@ -17,9 +17,7 @@ const Blogcolumn = () => {
 
   return (
     
-
-
-        
+    
 <div className="column-blog-container">
 
 

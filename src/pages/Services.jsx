@@ -5,6 +5,7 @@ import Servicescolumns from '../components/Servicescolumns';
 import Greentext from '../components/Greentext';
 import Testimonials from '../components/Testimonials';
 import Subscribe from '../components/Subscribe';
+import Accordion from '../components/Accordion';
 
 const Services = () => {
   return (
@@ -18,7 +19,8 @@ const Services = () => {
       greentitle ="Looking for Secure and Flexible Storage? Find Your Perfect Fit With Us."
       greeningresse ="Lorem ipsum dolor sit amet, consectetur adipiscing elit. Quisque molestie nisl sed dui lacinia gravida. Nulla quis nulla leo. Mauris ac blandit nisi non sodales augue. Phasellus eget elit gravida."
       />
-
+      
+      <Accordion />
       <Subscribe />
       <Footer />
       </div>

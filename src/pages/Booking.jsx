@@ -3,7 +3,7 @@ import Footer from '../components/Footer';
 import Chooseus from '../components/Chooseus';
 import Greentext from '../components/Greentext';
 import Subscribe from '../components/Subscribe';
-
+import Accordion from '../components/Accordion';
 
 const Booking = () => {
   return (
@@ -16,8 +16,8 @@ const Booking = () => {
       greeningresse ="Lorem ipsum dolor sit amet, consectetur adipiscing elit. Quisque molestie nisl sed dui lacinia gravida. Nulla quis nulla leo. Mauris ac blandit nisi non sodales augue. Phasellus eget elit gravida."
       />
 
-
-<Subscribe />
+      <Accordion />
+      <Subscribe />
       <Footer />
     </div>
   )
