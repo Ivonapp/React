@@ -43,7 +43,8 @@ const res = await fetch('https://win25-jsf-assignment.azurewebsites.net/api/subs
 }
   return (
 
-        <div>
+<div className="subscribe-color">
+<div className="container">         
 <div className="subscribe-container">
 <div className ="icon-row">
     
@@ -75,6 +76,7 @@ const res = await fetch('https://win25-jsf-assignment.azurewebsites.net/api/subs
                 </form>
             </div>
         </div>
+    </div>
     </div>
   )
 }

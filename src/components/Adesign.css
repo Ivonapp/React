@@ -152,6 +152,9 @@ background-color: var(--green-primary-color);
 
 
 /*SUBSCRIBE*/
+.subscribe-color {
+background-color: var(--primary-subscribe-color);
+}
 .subscribe-title {
 font-size: 2.5rem;
 font-weight: 800;
@@ -166,7 +169,6 @@ color: var(--green-primary-color);
   display: flex;
   justify-content: center;
   align-items: center;
-  background-color: var(--primary-subscribe-color);
   flex-direction: column;
   padding: 30px;
 }
@@ -190,8 +192,9 @@ color: var(--green-primary-color);
 .icon-row {
   display: flex;
   align-items: center;
-  flex-direction: row;
-  gap: 100px;  /*MELLANRUMMET MELLAN KNAPPEN OCH RUBRIKEN*/
+  justify-content: space-between;
+  width: 100%;
+  gap: 30px;  /*MELLANRUMMET MELLAN KNAPPEN OCH RUBRIKEN*/
 }
 .search-row {
   display: flex;
@@ -206,7 +209,7 @@ color: var(--green-primary-color);
 .input-wrapper input {
   height: 50px;
   width: 100%;
-  min-width: 200px;
+  min-width: 600px;
   padding-left: 35px;
   border-radius: 5px 5px 5px 5px;
   border: none; 
@@ -358,8 +361,8 @@ color: var(--orange-primary-color);
 .logoipsum-flex {
   display: flex;
   justify-content: space-around;
-  padding-bottom: 50px;
-  padding-top: 50px;
+  padding-bottom: 3rem;
+  padding-top: 3rem;
 }
 /*LOGOIPSUM END*/
 
@@ -375,7 +378,9 @@ margin-left: 2rem;
   display: flex;
   align-items: center;
   justify-content: space-around;
-  
+}
+.column-margin {
+  margin-bottom: 4rem;
 }
 /*SERVICESCOLUMN END*/
 
@@ -393,9 +398,8 @@ border: 2px solid var(--gray-border-color);
 border-radius: 10px;
 padding: 1.7rem;
 margin: 0.5rem;
-max-width: 350px;
+max-width: 400px;
 }
-
 .yellow-border:hover {
 border: 2px solid var(--orange-primary-color);
 }
@@ -716,10 +720,10 @@ justify-content: center;
 /*BLOGCOLUMN END*/
 
 /*TESTIMONIALS*/
-.testimonials {
+.testimonials-color {
   background-color: var(--green-hero-color);
-  display: flex;
-  flex-direction: row;
+}
+.testimonials {
   padding-top: 1rem;
   padding-bottom: 1rem;
 }
@@ -728,12 +732,11 @@ justify-content: center;
 }
 .testimonials-wrapper {
   display: flex;
-  margin: 0 auto;
-  max-width: 1296px;
-  align-items: flex-start;
   justify-content: space-between;
+  align-items: center;
   padding-bottom: 100px;
   padding-top: 100px;
+  gap: 1rem;
 }
 .testimonials-title {
   display: flex; 
@@ -741,20 +744,13 @@ justify-content: center;
   font-size: 40px;
   font-weight: 800;
 }
-.box-wrapper {
-  display: flex;
-  margin-left: auto;
-  gap: 2rem;
-  width: 860px;
-  height: 330px;
-}
+
 .testimonial-box {
   display: flex;
   position: relative; 
-  width: 420px;
   height: 330px;
   border-radius: 8px;
-  background-color: #ffffff;
+  background-color: var(--white-color);
   flex-direction: column;
   align-items: flex-start;
 }
@@ -875,3 +871,22 @@ gap: 1rem;
 width: 100%;
 }
 /*FORMPAGE END*/
+
+/*TESTIMONIALS*/
+.testimonials-title-ingress {
+display: flex;
+flex-direction: column;
+align-items: center;
+padding-top: 4rem;
+}
+.testimonials-yellow-title {
+color: var(--orange-primary-color);
+}
+.testimonials-white-title {
+color: var(--white-color);
+}
+.testimonials-small-ingress {
+color: var(--white-color);
+}
+
+/*TESTIMONIALS*/

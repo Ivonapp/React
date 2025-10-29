@@ -9,7 +9,7 @@ function Servicescolumns() {
     <div>
         
     <div className="container">
-
+    <div className="column-margin">
     <Titlelayout
     title="Our Services"
     middletitle="Specialized Storage for Every Special Item"
@@ -42,6 +42,7 @@ function Servicescolumns() {
                     ingress="Lorem ipsum dolor sit amet, consectetur adipiscing elit. Ut elit tellus, luctus nec ullamcorper mattis, pulvinar dapibus leo."  
                 />
 
+                    </div>
                 </div>
             </div>
         </div>

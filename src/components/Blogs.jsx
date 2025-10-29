@@ -5,7 +5,6 @@ import Titlelayout from './Titlelayout';
 function Blogs() {
   return (
     <div>
-        <div className="container"> 
         <Titlelayout
         title ="Latest Blog and News"
         middletitle ="Check Out Our Latest Blog and News Update"
@@ -15,7 +14,6 @@ function Blogs() {
         <Blogcolumn />
     </div>
 
-    </div>
   )
 }
 

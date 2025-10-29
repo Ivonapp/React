@@ -1,5 +1,6 @@
 
 import React, {useState, useEffect} from 'react'
+import Testimonialstitle from './Testimonialstitle'
 
 
 const Testimonials = () => {
@@ -17,9 +18,15 @@ const Testimonials = () => {
 
   return (
 
-    <section id="testimonials" className="testimonials">
-        
-      <div className="container">
+<div className="testimonials-color">
+          <div className="container">
+            < Testimonialstitle
+            title="Testimonials"
+            middletitle="See What Our Client Have to Say"
+            ingress="Lorem ipsum dolor sit amet, consectetur adipiscing elit. Quisque molestie nisl sed dui lacinia gravida. Nulla quis nulla leo. Mauris ac blandit nisi non sodales augue. Phasellus eget elit gravida."
+            />
+              <div className="testimonials">
+
         <div className="testimonials-wrapper">
                        {serviceItems.map(item => (
                        <div key={item.id} className="box-wrapper">
@@ -49,8 +56,9 @@ const Testimonials = () => {
            ))}
         </div>
       </div>
+  </div>
+</div>
 
-    </section>
   )
 }
 

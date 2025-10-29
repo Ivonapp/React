@@ -11,7 +11,6 @@ function Formpage() {
 
 <div className="container">
 
-
 <div className="box-form-container"> 
 <img src={Bookbox} alt="graybox" className="logo" />
             

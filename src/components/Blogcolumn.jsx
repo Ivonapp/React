@@ -17,7 +17,7 @@ const Blogcolumn = () => {
 
   return (
     
-    
+        <div className="container">  
 <div className="column-blog-container">
 
 
@@ -44,6 +44,7 @@ const Blogcolumn = () => {
             
         </div>
       ))}
+    </div>
     </div>
   )
 }
