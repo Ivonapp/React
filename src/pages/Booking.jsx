@@ -4,12 +4,17 @@ import Chooseus from '../components/Chooseus';
 import Greentext from '../components/Greentext';
 import Subscribe from '../components/Subscribe';
 import Accordion from '../components/Accordion';
+import Form from '../components/Form';
+
 
 const Booking = () => {
   return (
     <div>Booking
 
-
+      <HeroSmall 
+            headline ="Booking"
+            ingress ="Lorem ipsum dolor sit amet, consectetur adipiscing elit. Ut elit tellus, luctus nec ullamcorper mattis, pulvinar dapibus leo." />
+      <Form />
       <Chooseus />
       <Greentext 
       greentitle ="Looking for Secure and Flexible Storage? Find Your Perfect Fit With Us."

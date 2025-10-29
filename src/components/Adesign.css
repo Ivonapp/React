@@ -827,3 +827,52 @@ justify-content: center;
   border: 0;
 }
 /*ACCORDION END*/
+
+.form-alignment {
+  display: flex;
+  justify-content: right;
+}
+.form-container {
+  background-color: var(--logoipsum-color);
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 1rem;
+  padding: 1.5rem;
+  border-radius: 5px;
+}
+.form-name-email {
+  display: flex;
+  gap: 1rem;
+  width: 100%;
+  max-width: 600px;
+}
+.form-name-email .input {
+  flex: 1;
+}
+.form-unit,
+.form-storage {
+  width: 100%;
+  max-width: 600px;
+}
+.input {
+  width: 100%;
+  padding: 0.6rem;
+  border-radius: 5px;
+  box-sizing: border-box;
+  font-size: 1rem;
+  color: var(--orange-primary-color);
+  border: 1px solid var(--orange-primary-color);
+}
+.form-button {
+  align-self: flex-start;
+}
+.form-text-alignment {
+  display: flex;
+  flex-direction: column;
+}
+textarea {
+  height: 150px;
+  resize: none;
+  font-family: 'urbanist', sans-serif;
+}
