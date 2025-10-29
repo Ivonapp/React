@@ -585,7 +585,6 @@ padding-top: 1rem;
 
 
 /*PAGENOTFOUND*/
-
   .page-not-found-wrapper{
   display: flex;
   flex-direction: column;
@@ -594,6 +593,7 @@ padding-top: 1rem;
   height: 700px;
   margin-bottom: 1rem;
   }
+
 .page-not-found-background {
   background-color: var(--green-primary-color);
 }
@@ -669,18 +669,14 @@ padding-top: 5rem;
   background-color: black;
 }
 
-
 /*BLOGS*/
-
 .column-blog-container {
   display: flex;
   gap: 1.5rem;
 }
-
 /*BLOGS END*/
 
 /*BLOGCOLUMN*/
-
 .column-green-2, .column-green-1 {
   display: flex;
   justify-content: center;
@@ -719,11 +715,7 @@ justify-content: center;
 }
 /*BLOGCOLUMN END*/
 
-
-
-
 /*TESTIMONIALS*/
-
 .testimonials {
   background-color: var(--green-hero-color);
   display: flex;
@@ -828,24 +820,21 @@ justify-content: center;
 }
 /*ACCORDION END*/
 
-.form-alignment {
-  display: flex;
-  justify-content: right;
-}
+/*FORM*/
 .form-container {
   background-color: var(--logoipsum-color);
   display: flex;
   flex-direction: column;
-  align-items: center;
   gap: 1rem;
   padding: 1.5rem;
   border-radius: 5px;
+  height: 100%;
+  width: 650px;
 }
 .form-name-email {
   display: flex;
   gap: 1rem;
   width: 100%;
-  max-width: 600px;
 }
 .form-name-email .input {
   flex: 1;
@@ -853,7 +842,6 @@ justify-content: center;
 .form-unit,
 .form-storage {
   width: 100%;
-  max-width: 600px;
 }
 .input {
   width: 100%;
@@ -868,6 +856,7 @@ justify-content: center;
   align-self: flex-start;
 }
 .form-text-alignment {
+  flex: 1;
   display: flex;
   flex-direction: column;
 }
@@ -876,3 +865,13 @@ textarea {
   resize: none;
   font-family: 'urbanist', sans-serif;
 }
+/*FORM END*/
+
+/*FORMPAGE*/
+.box-form-container {
+display: flex;
+justify-content: space-between;
+gap: 1rem;
+width: 100%;
+}
+/*FORMPAGE END*/

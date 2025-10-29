@@ -1,12 +1,12 @@
 import React from 'react'
 import Buttondark from './Buttondark'
 
-
 function Form() {
   return (
-        <div className="container">
-            <div className="form-alignment"> 
+    
 
+
+            <div className="form-alignment"> 
             <div className="form-container">
                         <div className="form-name-email">
                             <div className="form-text-alignment">
@@ -56,7 +56,6 @@ function Form() {
                         />
                 </div>
             </div>
-        </div>
     </div>
   )
 }
