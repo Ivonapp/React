@@ -147,6 +147,10 @@ background-color: var(--green-primary-color);
   justify-content: center;
 }
 
+
+
+
+
 /*SUBSCRIBE*/
 .subscribe-title {
 font-size: 2.5rem;
@@ -208,7 +212,48 @@ color: var(--green-primary-color);
   border: none; 
   border: 2px solid var(--orange-primary-color);
 }
+/*ERROR*/
+.input-wrapper {
+    position: relative; /*HÄR*/
+}
+.input::placeholder {
+  color: var(--placeholder-color); 
+}
+.input + label {
+  color: var(--label-color);
+}
+.input.invalid + .error {
+  border-color: red;
+  color: red;
+}
+.error {
+  position: absolute;
+  top: 40px;
+  left: 35px;
+  background-color: red; 
+  color: white;
+  font-size: 10px;
+  padding: 6px 10px;
+  border-radius: 4px;
+  margin-top: 4px;
+  opacity: 1;
+  white-space: nowrap;
+  transition: opacity 0.2s ease-in-out, visibility 0.2s ease-in-out;
+}
+  .error::before {
+    content: '';
+    position: absolute;
+    bottom: 100%;
+    left: 10px;
+    border-width: 6px;
+    border-style: solid;
+  }
+/*ERROR END*/
 /*SUBSCRIBE END*/
+
+
+
+
 
 
 /*FOOTER END*/
@@ -338,6 +383,7 @@ margin-left: 2rem;
   font-size: 16px;
   font-weight: 800;
 }
+
 .yellow-border-ingress {
   font-size: 16px;
 }
@@ -348,8 +394,9 @@ padding: 1.7rem;
 margin: 0.5rem;
 max-width: 350px;
 }
+
 .yellow-border:hover {
-   border: 2px solid var(--orange-primary-color);
+border: 2px solid var(--orange-primary-color);
 }
 /*YELLOWBORDER END*/
 
@@ -535,15 +582,17 @@ padding-top: 1rem;
 }
 /*GREENTEXT END*/
 
+
 /*PAGENOTFOUND*/
-.page-not-found-wrapper {
+
+  .page-not-found-wrapper{
   display: flex;
   flex-direction: column;
   text-align: center;
   justify-content: center;
   height: 700px;
   margin-bottom: 1rem;
-}
+  }
 .page-not-found-background {
   background-color: var(--green-primary-color);
 }
@@ -619,11 +668,18 @@ padding-top: 5rem;
   background-color: black;
 }
 
-/*BLOGCOLUMN*/
-.column-container {
+
+/*BLOGS*/
+
+.column-blog-container {
   display: flex;
-  gap: 1rem;
+  gap: 1.5rem;
 }
+
+/*BLOGS END*/
+
+/*BLOGCOLUMN*/
+
 .column-green-2, .column-green-1 {
   display: flex;
   justify-content: center;
@@ -633,7 +689,6 @@ padding-top: 5rem;
 }
 .column-green-1 {
   padding-top: 1.3rem;
-  border-radius: 5px 5px 0 0;
 }
 .column-green-2 {
   flex-direction: column;
@@ -642,22 +697,15 @@ padding-top: 5rem;
   padding-bottom: 2rem;
   padding-top: 1rem;
   margin-bottom: 1rem;
-  border-radius: 0 0 5px 5px;
 }
 .column-img {
 display: flex;
 justify-content: center;
 }
-.column-img img {
-  border-radius: 5px;
-}
 .column-ingress, .kalender-text, .column-title, .column-datum {
   color: var(--white-color);
   padding-top: 1rem;
 }
-.kalender-text {
-font-size: 14px;
-} 
 .column-yellow-ingress {
   color: var(--orange-primary-color);
   padding-top: 1.5rem;
@@ -669,3 +717,87 @@ font-size: 14px;
   font-weight: 800;
 }
 /*BLOGCOLUMN END*/
+
+
+
+
+/*TESTIMONIALS*/
+.fannie {
+  border: 2px solid red;
+}
+.testimonials {
+  background-color: var(--green-hero-color);
+  display: flex;
+  flex-direction: row;
+  padding-top: 1rem;
+  padding-bottom: 1rem;
+}
+.testimonials-icon {
+  border-radius: 50%;
+}
+.testimonials-wrapper {
+  display: flex;
+  margin: 0 auto;
+  max-width: 1296px;
+  align-items: flex-start;
+  justify-content: space-between;
+  padding-bottom: 100px;
+  padding-top: 100px;
+}
+.testimonials-title {
+  display: flex; 
+  text-align: left;
+  font-size: 40px;
+  font-weight: 800;
+}
+.box-wrapper {
+  display: flex;
+  margin-left: auto;
+  gap: 2rem;
+  width: 860px;
+  height: 330px;
+}
+.testimonial-box {
+  display: flex;
+  position: relative; 
+  width: 420px;
+  height: 330px;
+  border-radius: 8px;
+  background-color: #ffffff;
+  flex-direction: column;
+  align-items: flex-start;
+}
+.testimonials-title {
+  font-size: 16px;
+  font-weight: 800;
+}
+.testimonials-stars {
+  display: flex;
+  position: absolute;
+  top: 60px;
+  left: 30px;
+  gap: 5px;
+}
+.testimonials-comment {
+  margin-top: 90px; 
+  font-size: 18px;
+  font-weight: 500;
+  text-align: left;
+  width: 100%;
+  padding-left: 30px;
+}
+.testimonials-customer {
+  display: flex;
+  padding-left: 30px;
+  align-items: center;
+  gap: 10px;
+  margin-top: auto;
+  margin-bottom: 30px;
+}
+.testimonials-customer .text-sections, .text-sections {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  gap: 0;
+}
+/*TESTIMONIALS END*/

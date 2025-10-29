@@ -16,11 +16,16 @@ const Blogcolumn = () => {
     }, [])
 
   return (
+    
+
 
         
-<div className="column-container">
-                            {serviceItems.map(item => (
-                            <div key={item.id} className="column-wrapper">
+<div className="column-blog-container">
+
+
+
+           {serviceItems.map(item => (
+            <div key={item.id} className="column-wrapper">
     <div className="column-green-1">
     <div className="column-img">
         <img src={item.imageUrl} />
@@ -38,6 +43,7 @@ const Blogcolumn = () => {
                     <div className="column-ingress">{item.description}</div>
                 <div className="column-yellow-ingress">Read more →</div>
             </div>
+            
         </div>
       ))}
     </div>

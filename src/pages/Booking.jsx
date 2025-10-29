@@ -2,6 +2,7 @@ import React from 'react'
 import Footer from '../components/Footer';
 import Chooseus from '../components/Chooseus';
 import Greentext from '../components/Greentext';
+import Subscribe from '../components/Subscribe';
 
 
 const Booking = () => {
@@ -16,6 +17,7 @@ const Booking = () => {
       />
 
 
+<Subscribe />
       <Footer />
     </div>
   )

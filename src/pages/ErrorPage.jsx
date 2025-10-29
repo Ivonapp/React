@@ -1,5 +1,6 @@
 import React from 'react'
 import Footer from '../components/Footer';
+import Subscribe from '../components/Subscribe';
 
 
 const errorpage = () => {
@@ -8,6 +9,8 @@ const errorpage = () => {
 
 
 
+
+<Subscribe />
     <Footer />
     </div>
     

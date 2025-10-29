@@ -15,7 +15,8 @@ const handleSubmit = async (e) => {
 
 if (!formData.email.includes('@') || formData.email.trim() === '') {
     alert('Vänligen ange en giltig e-postadress.');
-    return; // VILLKOR HÄR
+    setEmailError(true);
+    return;
   }
 
 
@@ -31,6 +32,7 @@ const res = await fetch('https://win25-jsf-assignment.azurewebsites.net/api/subs
         console.log('allt lyckades')
         alert('allt lyckades')
         setFormData({ email: '' });
+        
       }
       else {
       console.log('Något gick fel')
@@ -65,6 +67,7 @@ const res = await fetch('https://win25-jsf-assignment.azurewebsites.net/api/subs
                 placeholder="Enter your email"
                 value={formData.email} onChange={handleInputChange} required
                 />
+                
                 </div>
                         <Buttondark
                         text="submit"
