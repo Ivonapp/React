@@ -1,19 +1,18 @@
 import React from 'react'
-import Footer from '../components/Footer';
-import Chooseus from '../components/Chooseus';
-import Greentext from '../components/Greentext';
-import Subscribe from '../components/Subscribe';
-import Accordion from '../components/Accordion';
-import Formpage from '../components/Formpage';
-
+import HeroSmall from '../components/HeroSmall'
+import Titlelayout from '../components/Titlelayout'
+import Chooseus from '../components/Chooseus'
+import Greentext from '../components/Greentext'
+import Accordion from '../components/Accordion'
+import Formpage from '../components/Formpage'
 
 const Booking = () => {
   return (
-    <div>Booking
+    <div>
 
       <HeroSmall 
-            headline ="Booking"
-            ingress ="Lorem ipsum dolor sit amet, consectetur adipiscing elit. Ut elit tellus, luctus nec ullamcorper mattis, pulvinar dapibus leo." />
+      headline ="Booking"
+      ingress ="Lorem ipsum dolor sit amet, consectetur adipiscing elit. Ut elit tellus, luctus nec ullamcorper mattis, pulvinar dapibus leo." />
       <Titlelayout
       title="Booking Unit"
       middletitle="Book Your Storage Unit Now & Simplify Your Life!"
@@ -27,8 +26,7 @@ const Booking = () => {
       />
 
       <Accordion />
-      <Subscribe />
-      <Footer />
+
     </div>
   )
 }

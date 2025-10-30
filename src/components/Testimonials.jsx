@@ -25,6 +25,7 @@ const Testimonials = () => {
             middletitle="See What Our Client Have to Say"
             ingress="Lorem ipsum dolor sit amet, consectetur adipiscing elit. Quisque molestie nisl sed dui lacinia gravida. Nulla quis nulla leo. Mauris ac blandit nisi non sodales augue. Phasellus eget elit gravida."
             />
+            
               <div className="testimonials">
 
         <div className="testimonials-wrapper">

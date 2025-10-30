@@ -1,7 +1,5 @@
 import React from 'react'
-import Footer from '../components/Footer';
-import Subscribe from '../components/Subscribe';
-import Pagenotfound from '../components/Pagenotfound';
+import Pagenotfound from '../components/Pagenotfound'
 
 const errorpage = () => {
   return (
@@ -10,8 +8,7 @@ const errorpage = () => {
 
 
     <Pagenotfound />
-    <Subscribe />
-    <Footer />
+
     </div>
     
   )

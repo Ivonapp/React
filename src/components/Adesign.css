@@ -599,7 +599,7 @@ padding-top: 1rem;
   }
 
 .page-not-found-background {
-  background-color: var(--green-primary-color);
+  background-color: var(--green-hero-color);
 }
 .page-not-found-title {
   color: var(--orange-primary-color);
@@ -855,6 +855,7 @@ justify-content: center;
   flex: 1;
   display: flex;
   flex-direction: column;
+  
 }
 textarea {
   height: 150px;
@@ -869,6 +870,7 @@ display: flex;
 justify-content: space-between;
 gap: 1rem;
 width: 100%;
+margin-bottom: 4rem;
 }
 /*FORMPAGE END*/
 

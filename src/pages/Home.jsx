@@ -1,15 +1,13 @@
 import React from 'react'
-import HeroLarge from '../components/HeroLarge';
-import Footer from '../components/Footer';
+import HeroLarge from '../components/HeroLarge'
 import Box1 from '../components/Box1'
 import Logoipsum from '../components/Logoipsum'
 import Servicescolumns from '../components/Servicescolumns';
-import Chooseus from '../components/Chooseus';
-import Pricingplan from '../components/Pricingplan';
-import Greentext from '../components/Greentext';
-import Blogs from '../components/Blogs';
-import Subscribe from '../components/Subscribe';
-import Testimonials from '../components/Testimonials';
+import Chooseus from '../components/Chooseus'
+import Pricingplan from '../components/Pricingplan'
+import Greentext from '../components/Greentext'
+import Blogs from '../components/Blogs'
+import Testimonials from '../components/Testimonials'
 
 const Home = () => {
   return (
@@ -28,8 +26,6 @@ const Home = () => {
       <Blogs />
     
 
-      <Subscribe />
-      <Footer />
     </div>
   )
 }

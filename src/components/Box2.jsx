@@ -1,9 +1,10 @@
 import React from 'react'
-import "./Adesign.css";
-import Phoneicon from '../assets/images/Phoneicon.svg';
-import Buttondark from './Buttondark';
-import Yellowborder from './Yellowborder';
-import Iconlayout from './Iconlayout';
+import "./Adesign.css"
+import { Link } from 'react-router-dom'
+import Phoneicon from '../assets/images/Phoneicon.svg'
+import Buttondark from './Buttondark'
+import Yellowborder from './Yellowborder'
+import Iconlayout from './Iconlayout'
 
 
 function Box2() {
@@ -35,8 +36,13 @@ function Box2() {
 />
     </div>
 
-    <div className="button-icon-wrapper"> 
-    <Buttondark text="Discover More" />
+    <div className="button-icon-wrapper">
+    <Link to="/Aboutus">
+    <Buttondark
+    text="Discover More"
+    />
+    </Link>
+
     
 
 

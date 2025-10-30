@@ -1,5 +1,6 @@
 import React from 'react'
 import Buttonlight from './Buttonlight';
+import { Link } from 'react-router-dom';
 
 function Pricingplancolumn({ pricetext, amounttext }) {
   return (
@@ -50,8 +51,14 @@ function Pricingplancolumn({ pricetext, amounttext }) {
 
 
 
+
                      <div className="buttons-container"> 
-                    <Buttonlight text="Rent Now" />
+
+                            <Link to="/Booking">
+                            <Buttonlight
+                            text ="Rent Now"
+                            />
+                            </Link>
                     </div>
                 </div>
             </div>

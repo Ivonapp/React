@@ -1,4 +1,5 @@
 import React from 'react'
+import { Link } from 'react-router-dom';
 import Buttonlight from './Buttonlight';
 
 function Greentext({ greentitle, greeningresse }) {
@@ -10,9 +11,12 @@ function Greentext({ greentitle, greeningresse }) {
                     <h3 className="greentitle">{greentitle}</h3>
                     <div className="greeningresse">{greeningresse}</div>
                     <div className="greenbutton">
-                    <Buttonlight 
-                    text="Book Now"
-                    />
+
+                        <Link to="/Booking">
+                        <Buttonlight
+                        text ="Book Now"
+                        />
+                        </Link>
                 </div>
             </div>
         </div>

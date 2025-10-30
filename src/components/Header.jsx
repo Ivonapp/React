@@ -1,11 +1,11 @@
-import React from 'react';
-import "./Adesign.css";
-import { NavLink } from 'react-router-dom';
-import Buttondark from './Buttondark';
-import Brev from '../assets/images/Brev.svg';
-import Telefon from '../assets/images/Telefon.svg';
-import Logostoragecompany from '../assets/images/Logostoragecompany.svg';
-import Socialmedia from '../components/Socialmedia';
+import React from 'react'
+import "./Adesign.css"
+import { NavLink, Link } from 'react-router-dom'
+import Buttondark from './Buttondark'
+import Brev from '../assets/images/Brev.svg'
+import Telefon from '../assets/images/Telefon.svg'
+import Logostoragecompany from '../assets/images/Logostoragecompany.svg'
+import Socialmedia from '../components/Socialmedia'
 
 
 
@@ -29,9 +29,10 @@ export default function Header() {
     
       <div className="middle-section">
       <div className="bottom-icon">
-      <a href="/Home">
-      <img src={Logostoragecompany} alt="Logotyp" className="logo" />
-     </a>
+
+<Link to="/home">
+  <img src={Logostoragecompany} alt="Logotyp" className="logo" />
+</Link>
       </div>
 
     <nav className="navbar">
@@ -43,10 +44,17 @@ export default function Header() {
     </div>
     </nav>
 
-    <Buttondark text ="Book Now" />
-        
+
+
+<Link to="/Booking">
+    <Buttondark
+    text ="Book Now"
+    />
+    </Link>    
     </div>
 
     </header>
   )
 }
+
+

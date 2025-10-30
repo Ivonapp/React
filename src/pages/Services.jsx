@@ -1,10 +1,8 @@
 import React from 'react'
 import HeroSmall from '../components/HeroSmall';
-import Footer from '../components/Footer';
 import Servicescolumns from '../components/Servicescolumns';
 import Greentext from '../components/Greentext';
 import Testimonials from '../components/Testimonials';
-import Subscribe from '../components/Subscribe';
 import Accordion from '../components/Accordion';
 
 const Services = () => {
@@ -21,8 +19,7 @@ const Services = () => {
       />
       
       <Accordion />
-      <Subscribe />
-      <Footer />
+
       </div>
   )
 }
