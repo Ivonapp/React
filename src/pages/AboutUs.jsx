@@ -15,6 +15,7 @@ const AboutUs = () => {
       />
 
     <Box1 />
+    
     <Logoipsum />
     <Testimonials />
     <Chooseus />

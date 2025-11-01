@@ -9,7 +9,7 @@
         <div>
           
         <div className="hero-background">
-          <div className="container">
+        <div className="container">
         <div className="text-container">
         <div className ="hero-small"> 
         <h1 className="h1-headline">{headline}</h1>

@@ -215,43 +215,6 @@ color: var(--green-primary-color);
   border: none; 
   border: 2px solid var(--orange-primary-color);
 }
-/*ERROR*/
-.input-wrapper {
-    position: relative; /*HÄR*/
-}
-.input::placeholder {
-  color: var(--placeholder-color); 
-}
-.input + label {
-  color: var(--label-color);
-}
-.input.invalid + .error {
-  border-color: red;
-  color: red;
-}
-.error {
-  position: absolute;
-  top: 40px;
-  left: 35px;
-  background-color: red; 
-  color: white;
-  font-size: 10px;
-  padding: 6px 10px;
-  border-radius: 4px;
-  margin-top: 4px;
-  opacity: 1;
-  white-space: nowrap;
-  transition: opacity 0.2s ease-in-out, visibility 0.2s ease-in-out;
-}
-  .error::before {
-    content: '';
-    position: absolute;
-    bottom: 100%;
-    left: 10px;
-    border-width: 6px;
-    border-style: solid;
-  }
-/*ERROR END*/
 /*SUBSCRIBE END*/
 
 
@@ -469,8 +432,8 @@ margin-left: 1rem;
 .border-pricing-container {
   width: 350px;
   height: 550px;
-  border: 3px solid #ECECEC;
-  background-color: #F1FFEA;
+  border: 3px solid var(--border-pricing-column);
+  background-color: var(--hover-pricing-background);
   border-radius: 10px;
   display: flex;
   justify-content: center;
@@ -629,11 +592,13 @@ padding-top: 5rem;
 }
 .socialmedia-container {
   display: flex;
+  justify-content: space-between;
 }
 .socialmedia-border-column {
   background-color: #9EB3A3;
-  padding-left: 2rem;
+  padding-left: 4rem;
   padding-right: 2rem;
+  width: 650px;
 }
 .socialmedia-border {
     display: flex;
@@ -648,7 +613,7 @@ padding-top: 5rem;
 }
 .socialmedia-ingress {
   padding-top: 1.5rem;
-  width: 470px;
+  width: 500px;
 }
 .icon-layout {
     display: flex;
@@ -663,6 +628,7 @@ padding-top: 5rem;
     align-items: center;
     justify-content: space-between;
     padding-top: 2.5rem;
+    width: 500px;
 }
 .socialmedia-oursocialmedia {
   font-weight: 800;
@@ -681,29 +647,26 @@ padding-top: 5rem;
 /*BLOGS END*/
 
 /*BLOGCOLUMN*/
-.column-green-2, .column-green-1 {
-  display: flex;
-  justify-content: center;
-  align-items: start;
-  background-color: var(--green-hero-color);
-  width: 470px;
+
+.column-blog-container {
+  margin-bottom: 5rem;
 }
 .column-green-1 {
-  padding-top: 1.3rem;
-}
-.column-green-2 {
+  display: flex;
+  justify-content: space-between;
+  align-items: start; 
   flex-direction: column;
-  padding-left: 1.5rem;
-  padding-right: 1.5rem;
-  padding-bottom: 2rem;
-  padding-top: 1rem;
+  background-color: var(--green-hero-color);
+  width: 470px;
+  height: 100%;
+  padding: 1rem 1.5rem 2rem 1.5rem;
   margin-bottom: 1rem;
 }
-.column-img {
-display: flex;
-justify-content: center;
+  .column-img {
+  display: flex;
+  justify-content: center;
 }
-.column-ingress, .kalender-text, .column-title, .column-datum {
+.column-ingress, .kalender-text, .column-title, .column-datum, .bi-calendar-range, .column-yellow-ingress {
   color: var(--white-color);
   padding-top: 1rem;
 }
@@ -717,6 +680,22 @@ justify-content: center;
 .column-title {
   font-weight: 800;
 }
+.column-icon-datum {
+  padding-top: 1rem;
+}
+/*HOVER*/
+.column-green-1:hover {
+  background-color: var(--hover-pricing-background);
+}
+.column-green-1:hover .column-ingress,
+.column-green-1:hover .kalender-text,
+.column-green-1:hover .column-title,
+.column-green-1:hover .column-datum, 
+.column-green-1:hover .bi-calendar-range {
+  color: var(--green-hero-color);
+}
+
+
 /*BLOGCOLUMN END*/
 
 /*TESTIMONIALS*/
@@ -744,7 +723,6 @@ justify-content: center;
   font-size: 40px;
   font-weight: 800;
 }
-
 .testimonial-box {
   display: flex;
   position: relative; 
@@ -827,12 +805,12 @@ justify-content: center;
   height: 100%;
   width: 650px;
 }
-.form-name-email {
+.form-email-phone {
   display: flex;
   gap: 1rem;
   width: 100%;
 }
-.form-name-email .input {
+.form-email-phone .input {
   flex: 1;
 }
 .form-unit,
@@ -862,7 +840,21 @@ textarea {
   resize: none;
   font-family: 'urbanist', sans-serif;
 }
+.Kund-respons {
+  display: flex; 
+  border-radius: 10px;
+  gap: 3rem;
+  justify-content: center;
+  align-items: center;
+ flex-direction: column;
+  background-color: var(--light-green-headline-color);
+}
 /*FORM END*/
+
+/*FORM ERROR-MESSAGE (SPAN)*/
+.error-message {
+color: red;
+}
 
 /*FORMPAGE*/
 .box-form-container {

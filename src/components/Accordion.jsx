@@ -6,8 +6,8 @@ function Accordion() {
 
   return (
         
-    <div className="container">
-    <div className="faq">
+                  <div className="container">
+                  <div className="faq">
 
                     <div className="faq-cards">
                     <div className="questions">
@@ -30,7 +30,6 @@ function Accordion() {
                     <div className="answer"> 
                     SVAR
                 </div>
-
             </div>
         </div>
     </div>

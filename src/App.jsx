@@ -6,7 +6,7 @@ import AboutUs from './pages/AboutUs';
 import Services from './pages/Services';
 import ContactUs from './pages/ContactUs';
 import Booking from './pages/Booking';
-import Errorpage from './pages/ErrorPage';
+import Errorpage from './pages/Errorpage';
 import Footer from './components/Footer';
 import Subscribe from './components/Subscribe';
 

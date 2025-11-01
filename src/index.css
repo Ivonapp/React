@@ -16,7 +16,10 @@
      --gray-border-color: #ECECEC;
      /*LOGOIPSUM*/
      --logoipsum-color: #faf8ec;
-}
+     /*PRICING-COLUMNS*/
+      --border-pricing-column: #ECECEC;
+      --hover-pricing-background: #F1FFEA; 
+  }
 
 body {
     font-family: 'Urbanist', sans-serif;

@@ -46,7 +46,7 @@ export default function Header() {
 
 
 
-<Link to="/Booking">
+    <Link to="/Booking">
     <Buttondark
     text ="Book Now"
     />
