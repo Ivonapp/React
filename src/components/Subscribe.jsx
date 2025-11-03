@@ -1,17 +1,15 @@
+
 import React, { useState } from 'react'
 import Buttondark from './Buttondark'
-
 
 const Subscribe = () => {
 const [formData, setFormData] = useState ({ email: '', })
 const [errors, setErrors] = useState({})
 const [submitted, setSubmitted] = useState(false)
 
-
 const handleChange = (e) => {    /*DENNA GÖR SÅ VI KAN SKRIVA PÅ HEMSIDNA*/
         const { name, value } = e.target
         setFormData({...formData, [name]: value})
-
  /*ERROR HANTERING*/
         if (value.trim() === '') { /*Om kund lämnar tomma fält*/
             setErrors(prevErrors =>  ({...prevErrors, [name]: `Please fill in ${name}`}))
@@ -23,13 +21,10 @@ const handleChange = (e) => {    /*DENNA GÖR SÅ VI KAN SKRIVA PÅ HEMSIDNA*/
              setErrors(prevErrors =>  ({...prevErrors, [name]: ''}))
         }
 
-
       }
     const handleOk = () => { /*NÄR KUNDEN TRYCKER PÅ OK-KNAPPEN SÅ FÖRSVINNER Kund-respons RUTAN*/
         setSubmitted(false)
-        setErrors({})
     }
-
     const handleSubmit = async (e) => {  /*Så sidan inte laddar om*/
         e.preventDefault() 
         const newErrors = {}
@@ -42,9 +37,7 @@ const handleChange = (e) => {    /*DENNA GÖR SÅ VI KAN SKRIVA PÅ HEMSIDNA*/
             setErrors(newErrors)
             return
         }
-
         /*alert('form submitted successfully')*/
-
         /*FETCH HÄR*/
         const res = await fetch('https://win25-jsf-assignment.azurewebsites.net/api/subscribe', {
         method: 'post',
@@ -53,10 +46,8 @@ const handleChange = (e) => {    /*DENNA GÖR SÅ VI KAN SKRIVA PÅ HEMSIDNA*/
         },
         body: JSON.stringify(formData)
         })
-
             console.log('Status:', res.status) 
             console.log('Response OK:', res.ok)
-
         /*OM ALLT KUND SKICKAR IN OVAN ÄR KORREKT KOMMER NEDAN:*/
         if (res.ok) {
             setSubmitted(true)
@@ -73,9 +64,7 @@ const handleChange = (e) => {    /*DENNA GÖR SÅ VI KAN SKRIVA PÅ HEMSIDNA*/
             </div>
         )
     }
-
   return (
-
 
 <form onSubmit={handleSubmit} noValidate> 
 <div className="subscribe-container">
@@ -90,9 +79,7 @@ const handleChange = (e) => {    /*DENNA GÖR SÅ VI KAN SKRIVA PÅ HEMSIDNA*/
                 </div>
                 </div>
 
-
                 <div className="search-row">
-
                 <div className="input-wrapper">
                 <input
                 type="text"
@@ -104,7 +91,6 @@ const handleChange = (e) => {    /*DENNA GÖR SÅ VI KAN SKRIVA PÅ HEMSIDNA*/
                 />
                 <span className="error-message">{errors.email && errors.email}</span>
                 </div>
-
                         <Buttondark text="Submit" />
                 </div>
             </div>
