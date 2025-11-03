@@ -27,7 +27,6 @@ const handleChange = (e) => {    /*DENNA GÖR SÅ VI KAN SKRIVA PÅ HEMSIDNA*/
       }
     const handleOk = () => { /*NÄR KUNDEN TRYCKER PÅ OK-KNAPPEN SÅ FÖRSVINNER Kund-respons RUTAN*/
         setSubmitted(false)
-        setErrors({})
     }
 
     const handleSubmit = async (e) => {  /*Så sidan inte laddar om*/

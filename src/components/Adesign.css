@@ -221,6 +221,11 @@ color: red;
   border: 2px solid red;
   font-size: 10px;
 }
+/*FORM ERROR-MESSAGE (SPAN)*/
+.error-message {
+color: red;
+}
+
 
 /*FOOTER END*/
 
