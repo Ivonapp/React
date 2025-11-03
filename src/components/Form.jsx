@@ -44,7 +44,9 @@ const CustomerForm = () => {
         } else {
         setErrors(prev => ({ ...prev, phoneNumber: '' }));
         }
-        }*/
+        }
+        
+} ta bort denna sen       */
 
     }
 
