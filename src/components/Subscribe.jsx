@@ -60,7 +60,7 @@ const handleChange = (e) => {    /*DENNA GÖR SÅ VI KAN SKRIVA PÅ HEMSIDNA*/
         return (
             <div className="subscribe-respons">
                 <h2>Du prenumererar nu på vårt nyhetsbrev!</h2>
-                <Buttondark text="OK" onClick={handleOk} />
+                <Buttondark text="OK" onClick={handleOk} type="button" />
             </div>
         )
     }
