@@ -210,6 +210,17 @@ color: var(--green-primary-color);
 }
 /*SUBSCRIBE END*/
 
+/*SUBSCRIBE - JAVASCRIPT*/
+
+.subscribe-respons {
+color: red;
+}
+.error-message {
+  color: red;
+  margin-bottom: 30px;
+  border: 2px solid red;
+  font-size: 10px;
+}
 
 /*FOOTER END*/
 

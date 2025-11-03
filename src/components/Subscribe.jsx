@@ -1,47 +1,83 @@
-import React, {useState, useEffect} from 'react'
+import React, { useState } from 'react'
 import Buttondark from './Buttondark'
 
 
 const Subscribe = () => {
 const [formData, setFormData] = useState ({ email: '', })
+const [errors, setErrors] = useState({})
+const [submitted, setSubmitted] = useState(false)
 
 
-const handleInputChange = (e) => {
-    const { name, value } = e.target;
-    setFormData({...formData, [name]: value })
-}
-const handleSubmit = async (e) => {
-  e.preventDefault()
+const handleChange = (e) => {    /*DENNA GÖR SÅ VI KAN SKRIVA PÅ HEMSIDNA*/
+        const { name, value } = e.target
+        setFormData({...formData, [name]: value})
 
-if (!formData.email.includes('@') || formData.email.trim() === '') {
-    alert('Vänligen ange en giltig e-postadress.');
-    return; // VILLKOR HÄR
-  }
+ /*ERROR HANTERING*/
+        if (value.trim() === '') { /*Om kund lämnar tomma fält*/
+            setErrors(prevErrors =>  ({...prevErrors, [name]: `Please fill in ${name}`}))
+        } 
+        else if (!value.includes('@')) {
+            setErrors(prevErrors => ({...prevErrors, [name]: `Please fill in a valid ${name} that contains the letter @.`}))
+        } 
+        else {
+             setErrors(prevErrors =>  ({...prevErrors, [name]: ''}))
+        }
 
 
-const res = await fetch('https://win25-jsf-assignment.azurewebsites.net/api/subscribe', {
-  method: 'post',
-  headers: {
-    'Content-Type': 'application/json'
-  },
-  body: JSON.stringify(formData)
-
-})
-      if (res.ok) {
-        console.log('allt lyckades')
-        alert('allt lyckades')
-        setFormData({ email: '' });
       }
-      else {
-      console.log('Något gick fel')
-      alert('Vänligen kontrollera att du fyllt i din email korrekt')
-      }
+    const handleOk = () => { /*NÄR KUNDEN TRYCKER PÅ OK-KNAPPEN SÅ FÖRSVINNER Kund-respons RUTAN*/
+        setSubmitted(false)
+        setErrors({})
+    }
 
+    const handleSubmit = async (e) => {  /*Så sidan inte laddar om*/
+        e.preventDefault() 
+        const newErrors = {}
+        Object.keys(formData).forEach(field => {
+                if (formData[field].trim() === '') {
+                    newErrors[field] = `Please fill in ${field}`
+                }
+        })
+        if (Object.keys(newErrors).length > 0) {
+            setErrors(newErrors)
+            return
+        }
 
-}
+        /*alert('form submitted successfully')*/
+
+        /*FETCH HÄR*/
+        const res = await fetch('https://win25-jsf-assignment.azurewebsites.net/api/subscribe', {
+        method: 'post',
+        headers: {
+        'Content-Type': 'application/json'
+        },
+        body: JSON.stringify(formData)
+        })
+
+            console.log('Status:', res.status) 
+            console.log('Response OK:', res.ok)
+
+        /*OM ALLT KUND SKICKAR IN OVAN ÄR KORREKT KOMMER NEDAN:*/
+        if (res.ok) {
+            setSubmitted(true)
+            setFormData({  /*NOLLSTÄLLER FORMULÄRET*/
+            email: '' })
+        }
+    }
+    
+    if (submitted) {
+        return (
+            <div className="subscribe-respons">
+                <h2>Du prenumererar nu på vårt nyhetsbrev!</h2>
+                <Buttondark text="OK" onClick={handleOk} />
+            </div>
+        )
+    }
+
   return (
 
-        <div>
+
+<form onSubmit={handleSubmit} noValidate> 
 <div className="subscribe-container">
 <div className ="icon-row">
     
@@ -55,24 +91,25 @@ const res = await fetch('https://win25-jsf-assignment.azurewebsites.net/api/subs
                 </div>
 
 
-                <form className="search-row" onSubmit={handleSubmit} noValidate>
+                <div className="search-row">
 
                 <div className="input-wrapper">
                 <input
                 type="text"
                 name="email"
+                value={formData.email}
+                onChange={handleChange}
                 className="input"
                 placeholder="Enter your email"
-                value={formData.email} onChange={handleInputChange} required
                 />
+                <span className="error-message">{errors.email && errors.email}</span>
                 </div>
-                        <Buttondark
-                        text="submit"
-                        />
-                </form>
+
+                        <Buttondark text="Submit" />
+                </div>
             </div>
         </div>
-    </div>
+  </form>
   )
 }
 export default Subscribe
